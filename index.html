@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <center>
+        <h1> Formulario</h1>
+        <p>Nome: 
+            
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome"></p>
+       <br>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+        <br><br>
+        <h1>Formulario de validação</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="main.js" method="get">
+            <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" placeholder="Digite su nome" minlength="6" maxlength="40" required name="nome">  </p>          
+            <p>
+                <label for="isobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome" minlength="6"  maxlength="40" required name="sobrenome">
+                <br><br>
+                <label for="idata">Data: </label>
+                <input type="date" name="data" id="idata">
+                <br><br>
+                <label for="isobrenome">Cidade: </label>
+                <input type="text" name="cidade" id="icidade" placeholder="Digite sua cidade" minlength="6"  maxlength="40" required name="cidade">
+                <br><br>
+                <label for="iemail">Email: </label>
+                <input type="email" name="Email" id="iemail">
+                <br><br>
+                <p><input type="submit" value="Enviar"></p>
+
+
+
+    </form>
+
+            </p>
+        </fieldset>
+    </center>
+</body>
+</html>
